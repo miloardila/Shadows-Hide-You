@@ -13,10 +13,14 @@ public class pasodeescena : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        void OnTriggerEnter2D(Collider2D other);
-           if(other.gameObject.tag == "heroe")
+        
+	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    { 
+        if(other.gameObject.tag == "heroe")
         {
             SceneManager.LoadScene("room 2", LoadSceneMode.Single);
         }
-	}
+    }
 }
